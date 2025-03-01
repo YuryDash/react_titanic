@@ -1,0 +1,35 @@
+.Item {
+  font-size: 13px;
+  line-height: 1;
+  color: 6d6c6c;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 35px 0 25px;
+  position: relative;
+  user-select: none;
+
+  &[data-disabled] {
+    color: mediumspringgreen;
+    pointer-events: none;
+  }
+
+  &[data-highlighted] {
+    outline: none;
+    background-color: whitesmoke;
+    color: #6d6c6c;
+  }
+
+  .ItemIndicator {
+    position: absolute;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #22a6b3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
